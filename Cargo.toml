@@ -1,0 +1,13 @@
+[package]
+name = "particle"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wgpu-bootstrap = { git = "https://github.com/qlurkin/wgpu-bootstrap", tag = "v0.4.2" }
+bytemuck = { version = "1.18", features = ["derive"] }
+rand = "0.8"
+
+[[bin]]
+name = "particle"
+path = "particle/src/main.rs"
